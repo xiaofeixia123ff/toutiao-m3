@@ -10,7 +10,7 @@ const routes = [
       {
         path: '', // 默认子路由
         name: 'home',
-        component: () => import('@/views/home')
+        component: () => import('@/views/home/index.vue')
       },
       {
         path: '/qa',
