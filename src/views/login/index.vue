@@ -112,6 +112,7 @@ export default {
         console.log(data)
         this.$store.commit('setUser', data.data)
         this.$toast.success('登录成功')
+        this.$router.push('/my')
       } catch (err) {
         console.log('登录失败', err)
         if (err.response.status === 400) {
